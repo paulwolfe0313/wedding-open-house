@@ -61,12 +61,19 @@ const vendors = [
       'Photography + design with heart. Monica captures candid joy and curated details in a style that\'s both dreamy and personal.',
   },
   {
-    name: 'The Storie Collective',
-    image: '/logos/storiecollective.png',
-    instagram: 'https://www.instagram.com/thestoriecollective',
-    description:
-      'Wedding planning and design experts who turn your love story into a stunning, one-of-a-kind celebration with style and grace.',
-  },
+  name: 'The Storie Booth',
+  image: '/logos/storiecollective.png',
+  instagram: 'https://www.instagram.com/thestoriebooth?igsh=MXFpZGpzYXRpcm5iYQ==',
+  description:
+    'Luxury photo booth experiences with a stylish twist — The Storie Booth adds fun, flair, and unforgettable moments to your big day.',
+},
+{
+  name: 'La Pera Austin',
+  image: '/logos/lapera.png',
+  instagram: 'https://www.instagram.com/laperaaustin?igsh=MTVmeXNlcXFnd3gxMw==',
+  description:
+    'A mobile culinary experience delivering elegant Latin fusion bites with bold flavor — perfect for weddings and private events.',
+},
   
 ];
 
