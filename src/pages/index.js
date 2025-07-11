@@ -39,11 +39,12 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3">Open House</h1>
             <h2 className="text-xl sm:text-2xl font-medium mb-4">Rosebridge Estate & CW Events</h2>
             <p className="text-sm sm:text-base max-w-2xl leading-relaxed">
-              Welcome to the Rosebridge Estate x CW Events Open House! We're so glad you're here.
-              Take your time exploring the venue and meeting our incredible team of wedding professionals — 
-              from florists to photographers, planners, designers, and more.
-              This is your day to dream, connect, and envision your perfect celebration.
-            </p>
+            Welcome to the Rosebridge Estate x CW Events Open House! We&apos;re so glad you&apos;re here.
+            Take your time exploring the venue and meeting our incredible team of wedding professionals — 
+            from florists to photographers, planners, designers, and more.
+            This is your day to dream, connect, and envision your perfect celebration.
+          </p>
+
           </motion.div>
         </section>
 
