@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const vendors = [
-  
   {
     name: 'Rosebridge Estate',
     image: '/logos/rosebridge.png',
@@ -24,7 +23,6 @@ const vendors = [
     description:
       'Mobile bartending that brings the bar to you — stylish taps, signature cocktails, and southern charm served with every pour.',
   },
-  
   {
     name: 'A&Bé Bridal Shop',
     image: '/logos/abebridal.png',
@@ -61,20 +59,26 @@ const vendors = [
       'Photography + design with heart. Monica captures candid joy and curated details in a style that\'s both dreamy and personal.',
   },
   {
-  name: 'The Storie Booth',
-  image: '/logos/storiecollective.png',
-  instagram: 'https://www.instagram.com/thestoriebooth?igsh=MXFpZGpzYXRpcm5iYQ==',
-  description:
-    'Luxury photo booth experiences with a stylish twist — The Storie Booth adds fun, flair, and unforgettable moments to your big day.',
-},
-{
-  name: 'La Pera Austin',
-  image: '/logos/lapera.png',
-  instagram: 'https://www.instagram.com/laperaaustin?igsh=MTVmeXNlcXFnd3gxMw==',
-  description:
-    'A mobile culinary experience delivering elegant Latin fusion bites with bold flavor — perfect for weddings and private events.',
-},
-  
+    name: 'The Storie Booth',
+    image: '/logos/storiecollective.png',
+    instagram: 'https://www.instagram.com/thestoriebooth?igsh=MXFpZGpzYXRpcm5iYQ==',
+    description:
+      'Luxury photo booth experiences with a stylish twist — The Storie Booth adds fun, flair, and unforgettable moments to your big day.',
+  },
+  {
+    name: 'La Pera Austin',
+    image: '/logos/lapera.png',
+    instagram: 'https://www.instagram.com/laperaaustin?igsh=MTVmeXNlcXFnd3gxMw==',
+    description:
+      'A mobile culinary experience delivering elegant Latin fusion bites with bold flavor — perfect for weddings and private events.',
+  },
+  {
+    name: 'Mike’s Dance Floor Rentals',
+    image: '/logos/mikesdancefloorrentals.png',
+    instagram: 'https://www.instagram.com/mikesdancefloorrentals?igsh=MWRzeXZ6ZGFtMWFzOQ==',
+    description:
+      'From elegant wood to LED light-up dance floors, Mike’s delivers unforgettable vibes to your reception. Stylish, safe, and party-ready.',
+  },
 ];
 
 export default function VendorGrid() {
@@ -82,17 +86,17 @@ export default function VendorGrid() {
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 px-4">
       {vendors.map((vendor, index) => (
         <motion.a
-            key={index}
-            href={vendor.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center text-center space-y-2 transition duration-300 active:scale-95"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            >
+          key={index}
+          href={vendor.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center text-center space-y-2 transition duration-300 active:scale-95"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 relative rounded-full shadow-lg bg-white">
             <Image
               src={vendor.image}
